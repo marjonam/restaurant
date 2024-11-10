@@ -91,3 +91,66 @@
   background-color: #ffffff;
   color: #000;
 }
+
+.footer__main {
+  background-image: url(./images/homepage/ready-bg-tablet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+}
+.footer__text {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.footer .header__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600px;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3;
+  position: relative;
+  margin-top: -0000;
+}
+.footer .header__button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+footer a {
+  text-align: left;
+  margin-left: 1000px;
+  margin-bottom: 900px;
+  padding-top: 1000px;
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  padding: 20px;
+  background-color: #111111;
+}
+
+.block {
+  flex: 1;
+  padding: 20px;
+  background-color: #111111;
+  color: #ffffff;
+  gap: 15px;
+  margin-left: 165px;
+}
+.logo {
+  margin-left: 165px;
+}
