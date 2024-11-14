@@ -14,6 +14,14 @@
   font-weight: 400;
   src: url("../fonts/league-spartan-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* league-spartan-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/league-spartan-v11-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* league-spartan-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -35,122 +43,298 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+}
+.hero {
+  flex-grow: 1;
+}
+.container {
+  width: 100%;
+  max-width: 186.5rem;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .header {
   width: 100%;
-  height: 100vh;
   background-image: url("./images/homepage/hero-img@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 19.8rem;
+  padding-top: 6.5rem;
 }
-
-.header__icon {
-  display: flex;
-  padding-left: 167px;
-  padding-top: 10px;
+.header__logo {
+  color: #fff;
+  padding-bottom: 15.3rem;
+  font-size: 5.6rem;
 }
-
-.header__heading {
-  font-family: "League Spartan", sans-serif;
+.header__container h1 {
+  width: 508px;
+  font-size: 8rem;
   font-weight: 300;
-  font-size: 80px;
   line-height: 80px;
-  color: #ffffff;
-  padding-left: 160px;
-  letter-spacing: -1px;
-  padding-top: 129px;
+  letter-spacing: -0.1rem;
+  padding-bottom: 10px;
 }
-
-.header__text {
-  font-family: "League Spartan";
+.header__container p {
+  width: 445px;
+  font-size: 2rem;
+  line-height: 3rem;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-  padding-left: 165px;
-  padding-top: 15px;
+  margin-bottom: 7rem;
 }
-.header__button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: transparent;
-  border: 2px solid white;
-  color: #ffffff;
-  text-transform: uppercase;
-  font: weight 600px;
-  font-family: "League Spartan", sans-serif;
+.header__container a {
+  padding: 2.5rem 5.4rem;
+  background-color: black;
+  color: white;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3;
-  position: relative;
-  left: 165px;
-  margin-top: 20px;
+  font-size: 1.7rem;
+  letter-spacing: 0.25rem;
+  border: 0.2rem solid transparent;
+  transition: 0.3s;
+}
+.header__container a:active {
+  background-color: white;
+  color: #111;
+  border: 0.2rem solid black;
 }
 
-.header__button:hover {
-  background-color: #ffffff;
-  color: #000;
-}
-
-.footer__main {
-  background-image: url(./images/homepage/ready-bg-tablet.jpg);
+.footer {
+  width: 100%;
+  height: 50vh;
+  background-image: url("./images/homepage/ready-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 240px;
 }
-.footer__text {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  color: #ffffff;
-  padding-top: 80px;
-  padding-left: 50px;
+.footer__top-container {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  align-items: center;
+  gap: 25rem;
+  padding-top: 11rem;
 }
-
-.footer .header__button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: transparent;
-  border: 2px solid white;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 600px;
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
+.footer__top-container a {
+  color: #fff;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3;
-  position: relative;
-  margin-top: -0000;
+  display: inline-block;
+  padding: 2.5rem 6.4rem;
+  transition: 0.3s;
+  letter-spacing: 0.25rem;
+  border: 0.1rem solid #fff;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1.6rem;
 }
-.footer .header__button:hover {
-  background-color: #ffffff;
-  color: #000;
+.footer__top-container a:hover {
+  border: 0.1rem solid black;
+  background-color: black;
+}
+.footer__top-container h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  padding-bottom: 6rem;
+}
+.footer__bottom {
+  width: 100%;
+  height: 240px;
+  background-color: #111;
+}
+.footer__bottom {
+  .footer__bottom-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-address p,
+  .footer-number p {
+    padding-bottom: 6px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 5.6rem;
+  }
+
+  .footer__bottom-container p {
+    text-transform: uppercase;
+  }
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+.footer__logo {
+  font-size: 56px;
+  color: #fff;
 }
 
-footer a {
-  text-align: left;
-  margin-left: 1000px;
-  margin-bottom: 900px;
-  padding-top: 1000px;
-  font-family: "League Spartan", sans-serif;
-}
-.container {
+.enjoy-container {
   display: flex;
   align-items: center;
-  gap: 45px;
-  padding: 20px;
-  background-color: #111111;
+  padding-bottom: 3rem;
+  color: black;
+}
+.left__img {
+  width: 54rem;
+  margin-top: -10rem;
+  box-shadow: 0 1rem 2rem #111;
+  margin-right: 24.5rem;
+}
+.enjoy-text {
+  width: 44.5rem;
+}
+.enjoy-text h2 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.02rem;
+  padding-bottom: 2.7rem;
+  color: #242b37;
+  font-weight: 700;
+}
+.enjoy-text p {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #242b37;
+}
+.local-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12rem;
+}
+.local-right__img {
+  margin-bottom: -10rem;
+  width: 54rem;
+  box-shadow: 0 0 2rem #111;
+}
+.hero {
+  width: 100%;
+  background-color: #111;
+  padding-top: 20rem;
+  padding-bottom: 2rem;
+}
+.hero__divide {
+  padding-bottom: 5.5rem;
+}
+.hero-left h1 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
+  padding-bottom: 2.7rem;
+}
+.hero-left p {
+  width: 445px;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
 }
 
-.block {
-  flex: 1;
-  padding: 20px;
-  background-color: #111111;
-  color: #ffffff;
-  gap: 15px;
-  margin-left: 165px;
+.hero__container {
+  display: flex;
+  justify-content: space-between;
 }
-.logo {
-  margin-left: 165px;
+.hero-right {
+  padding-bottom: 12rem;
+}
+.right__img {
+  display: flex;
+  padding-bottom: 2.4rem;
+  gap: 6.2rem;
+  align-items: center;
+}
+.right__img img {
+  width: 160px;
+}
+.right__text h5 {
+  font-size: 20px;
+  letter-spacing: -0.25px;
+  font-size: 2rem;
+  letter-spacing: -0.025rem;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 6px;
+  line-height: 2.4rem;
+  padding-bottom: 0.6rem;
+}
+.right__text p {
+  width: 350px;
+  font-size: 16px;
+  line-height: 26px;
+  line-height: 2.6rem;
+  font-weight: 400;
+}
+.hero-right__divide {
+  width: 540px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+  opacity: 14.94%;
+}
+.main {
+  flex-grow: 1;
+}
+.gathering-container {
+  display: flex;
+  color: black;
+  align-items: center;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+.gathering-container img {
+  width: 54rem;
+  box-shadow: 1rem 2rem 3rem #222;
+  margin-right: 28.5rem;
+}
+.gathering-right {
+  width: 44.5rem;
+}
+.gathering-right h2 {
+  font-size: 4.8rem;
+  color: #242b37;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.05rem;
+  padding-bottom: 1.9rem;
+}
+.gathering-right p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 8rem;
+  color: #242b37;
+  line-height: 3rem;
+}
+.gathering-right a {
+  padding: 2.5rem 5.4rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  letter-spacing: 0.25rem;
+  border: 0.2rem solid transparent;
+  transition: 0.3s;
+}
+.gathering-right a:hover {
+  background-color: white;
+  color: #111;
+  border: 0.2rem solid black;
 }
