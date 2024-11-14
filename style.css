@@ -81,6 +81,13 @@ body {
   padding-bottom: 15.3rem;
   font-size: 5.6rem;
 }
+.header__container p {
+  width: 445px;
+  line-height: 3rem;
+  font-weight: 400;
+  margin-bottom: 7rem;
+  font-size: 2rem;
+}
 .header__container h1 {
   width: 508px;
   font-size: 8rem;
@@ -89,13 +96,7 @@ body {
   letter-spacing: -0.1rem;
   padding-bottom: 10px;
 }
-.header__container p {
-  width: 445px;
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: 400;
-  margin-bottom: 7rem;
-}
+
 .header__container a {
   padding: 2.5rem 5.4rem;
   background-color: black;
